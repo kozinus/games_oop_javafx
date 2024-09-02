@@ -26,6 +26,7 @@ class BishopBlackTest {
             throws ImpossibleMoveException {
         Figure bishop = new BishopBlack(Cell.A8);
         assertThat(bishop.way(Cell.H1))
-                .isEqualTo(new Cell[] {Cell.B7, Cell.C6, Cell.D5, Cell.E4, Cell.F3, Cell.G2, Cell.H1});
+                .isEqualTo(new Cell[]
+                        {Cell.B7, Cell.C6, Cell.D5, Cell.E4, Cell.F3, Cell.G2, Cell.H1});
     }
 }
