@@ -26,7 +26,8 @@ public final class Logic {
             Figure figure = figures[index];
             for (Cell step : steps) {
                 if (figure.position().equals(step)) {
-                    throw new OccupiedCellException();
+                    throw new OccupiedCellException(
+                            String.format("Figure stands on the way on cell %s", step));
                 }
             }
         }

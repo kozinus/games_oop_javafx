@@ -29,6 +29,6 @@ public class LogicTest {
         OccupiedCellException exception = assertThrows(OccupiedCellException.class, () -> {
             logic.move(Cell.A8, Cell.F3);
         });
-        assertThat(exception.getMessage()).isNull();
+        assertThat(exception.getMessage()).isEqualTo("Figure stands on the way on cell D5");
     }
 }
